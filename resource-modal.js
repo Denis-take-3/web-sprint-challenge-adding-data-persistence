@@ -6,9 +6,9 @@ module.exports = {
 };
 
 function find() {
-  return db('project');
+  return db('resource as r')
 }
 
 function add(data) {
-  return db('project').insert(data);
+  return db('resource').insert(data);
 }
